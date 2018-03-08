@@ -1,0 +1,16 @@
+/*
+Theme Name: THEME
+*/
+
+@import "compass/reset";
+@import "compass/css3";
+
+@import "settings.colors";
+@import "settings.global";
+
+@import "base";
+
+@import "layout";
+@import "layout.grid";
+
+@import "utilities";

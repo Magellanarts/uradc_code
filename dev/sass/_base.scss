@@ -1,0 +1,31 @@
+html {
+  font-family: $siteFont;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-family: $siteFont;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
