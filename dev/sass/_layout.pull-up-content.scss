@@ -1,3 +1,9 @@
+.l-pull-up-content-container {
+  @media #{$medium} {
+    margin-bottom: -328px;
+  }
+}
+
 .l-pull-up-content {
   position: relative;
   top: -128px;

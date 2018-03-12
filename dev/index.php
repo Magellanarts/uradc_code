@@ -1,5 +1,5 @@
 <?php include('header.php'); ?>
-<section class="c-hero c-hero--orange">
+<section class="c-hero c-hero--orange"  style="background-image: url(i/hero.jpeg);">
   <div class="l-content-container">
     <div class="c-hero__content">
       <h2 class="c-hero__heading">Tailoring residencies towards international and interdisciplinary artists, designers & architects.</h2>

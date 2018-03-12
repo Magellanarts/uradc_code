@@ -1,12 +1,12 @@
 <?php include('header.php'); ?>
-<section class="c-hero c-hero--orange">
+<section class="c-hero c-hero--orange"  style="background-image: url(i/hero.jpeg);">
   <div class="l-content-container">
     <div class="c-hero__offset-content">
       <h2>Origins of Urban Blueprint</h2>
     </div>
   </div>
 </section>
-<section class="u-bg--gray--light">
+<section class="u-bg--gray--light" >
   <div class="l-content-container">
     <div class="l-program-content">
       <div class="l-program-content__secondary">

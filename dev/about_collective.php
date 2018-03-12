@@ -1,9 +1,9 @@
 <?php include('header.php'); ?>
-<section class="c-hero c-hero--gray">
+<section class="c-hero c-hero--gray"  style="background-image: url(i/hero.jpeg);">
 
 </section>
 <section class="u-bg--gray--light">
-  <div class="l-content-container">
+  <div class="l-content-container l-pull-up-content-container">
     <div class="l-pull-up-content">
       <div class="l-main-content">
         <div class="l-main-content__intro u-lrg-font-size">
@@ -19,10 +19,37 @@
         <div class="l-instructors-list">
           <div class="c-instructor-mini-card">
             <div class="c-instructor-mini-card__headshot">
-
+              <img src="i/bio.jpg">
             </div>
             <div class="c-instructor-mini-card__deatils">
-              <h4 class="c-instructor-mini-card__name">Mariella Poli</h4>
+              <h4 class="c-instructor-mini-card__name u-text--orange">Mariella Poli</h4>
+              <div class="c-instructor-mini-card__title">Interdisciplinary Artist / Professor</div>
+            </div>
+          </div>
+          <div class="c-instructor-mini-card">
+            <div class="c-instructor-mini-card__headshot">
+              <img src="i/bio.jpg">
+            </div>
+            <div class="c-instructor-mini-card__deatils">
+              <h4 class="c-instructor-mini-card__name u-text--orange">Mariella Poli</h4>
+              <div class="c-instructor-mini-card__title">Interdisciplinary Artist / Professor</div>
+            </div>
+          </div>
+          <div class="c-instructor-mini-card">
+            <div class="c-instructor-mini-card__headshot">
+              <img src="i/bio.jpg">
+            </div>
+            <div class="c-instructor-mini-card__deatils">
+              <h4 class="c-instructor-mini-card__name u-text--orange">Mariella Poli</h4>
+              <div class="c-instructor-mini-card__title">Interdisciplinary Artist / Professor</div>
+            </div>
+          </div>
+          <div class="c-instructor-mini-card">
+            <div class="c-instructor-mini-card__headshot">
+              <img src="i/bio.jpg">
+            </div>
+            <div class="c-instructor-mini-card__deatils">
+              <h4 class="c-instructor-mini-card__name u-text--orange">Mariella Poli</h4>
               <div class="c-instructor-mini-card__title">Interdisciplinary Artist / Professor</div>
             </div>
           </div>

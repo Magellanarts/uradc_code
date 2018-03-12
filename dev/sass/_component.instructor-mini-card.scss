@@ -1,0 +1,16 @@
+.c-instructor-mini-card {
+  display: flex;
+}
+
+.c-instructor-mini-card__headshot {
+  width: 144px;
+  margin-right: 25px;
+}
+
+.c-instructor-mini-card__name {
+  margin-bottom: 2px;
+}
+
+.c-instructor-mini-card__title {
+  font: 700 16px/1.5 $siteFont;
+}

@@ -1,0 +1,31 @@
+.c-form__field {
+  margin-bottom: 22px;
+}
+
+.c-form__label {
+  font: 700 24px/1 $siteFont;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.c-form__label__note {
+  color: #b2afc4;
+  font: 700 16px/1 $siteFont;
+}
+
+.c-form__input {
+  border-radius: 8px;
+  border: solid 2px rgba(178, 175, 196, 0.24);
+  box-sizing: border-box;
+  height: 72px;
+  width: 100%;
+  padding: 0 8px;
+  font: 24px/1 $siteFont;
+  outline: none !important;
+
+  &--textarea {
+    padding-top: 8px;
+    min-height: 320px;
+  }
+
+}

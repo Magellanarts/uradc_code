@@ -19,6 +19,11 @@
   }
 }
 
+.alignLeft {
+  float: left;
+  margin: 0 30px 22px 0;
+}
+
 .u-body-copy {
   p:not(:last-child),
   ul:not(:last-child),
@@ -42,6 +47,10 @@
         margin-bottom: 16px;
       }
     }
+  }
+
+  a {
+    color: $orange;
   }
 }
 

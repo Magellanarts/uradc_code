@@ -1,6 +1,23 @@
 .l-instructors-list {
+  > div{
+    margin-bottom: 48px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   @media #{$medium} {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    > div {
+      width: auto;
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+    }
   }
 }
