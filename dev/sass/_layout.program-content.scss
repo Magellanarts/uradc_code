@@ -1,0 +1,23 @@
+.l-program-content {
+  @media #{$medium} {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.l-program-content__secondary {
+  @media #{$medium} {
+    width: 38%;
+  }
+}
+
+.l-program-content__main {
+  padding-top: 28px;
+  @extend .u-std-font-size;
+  padding-bottom: 110px;
+
+  @media #{$medium} {
+    width: 56%;
+    padding-top: 67px;
+  }
+}

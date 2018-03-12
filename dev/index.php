@@ -14,7 +14,7 @@
      <section class="c-card">
        <div class="c-card__image-container">
          <div class="c-card__image">
-           <div class="c-card__tag">Interdisciplinary</div>
+           <div class="c-tag c-card__tag">Interdisciplinary</div>
          </div>
          <div class="c-card__attribution c-card__attribution u-hide-below-med u-hide-below-med--flex">
            <img src="i/headshot.jpg" class="c-card__attribution__headshot">
@@ -45,7 +45,7 @@
      <section class="c-card">
        <div class="c-card__image-container">
          <div class="c-card__image">
-           <div class="c-card__tag">Illustration</div>
+           <div class="c-tag c-card__tag">Illustration</div>
          </div>
          <div class="c-card__attribution c-card__attribution u-hide-below-med u-hide-below-med--flex">
            <img src="i/headshot.jpg" class="c-card__attribution__headshot">

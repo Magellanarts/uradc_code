@@ -9,6 +9,8 @@ Theme Name: URADC
 @import "settings.queries";
 @import "settings.global";
 
+@import "tools";
+
 
 @import "base";
 @import "base.headings";
@@ -16,14 +18,20 @@ Theme Name: URADC
 @import "layout";
 @import "layout.home-intro";
 @import "layout.home-vc";
+@import "layout.pull-up-content";
+@import "layout.program-content";
+@import "layout.main-content";
+@import "layout.instructors-list";
 
 @import "component.btn";
 @import "component.hero";
 @import "component.site-logo";
 @import "component.site-header";
 @import "component.nav-toggle";
+@import "component.tag";
 @import "component.card";
 @import "component.site-footer";
 @import "component.social-links";
+@import "component.program-details";
 
 @import "utilities";

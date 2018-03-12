@@ -1,0 +1,6 @@
+.l-instructors-list {
+  @media #{$medium} {
+    display: flex;
+    justify-content: space-between;
+  }
+}

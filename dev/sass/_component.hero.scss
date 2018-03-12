@@ -16,4 +16,13 @@
   &--orange {
     background: rgba($orange, .4);
   }
+
+  &--gray {
+    background: rgba($gray, .4);
+  }
+}
+
+.c-hero__offset-content {
+  padding-top: 44px;
+  padding-left: 44%;
 }

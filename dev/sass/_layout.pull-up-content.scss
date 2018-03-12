@@ -1,0 +1,9 @@
+.l-pull-up-content {
+  position: relative;
+  top: -128px;
+  z-index: 5;
+
+  @media #{$medium} {
+    top: -448px;
+  }
+}

@@ -1,0 +1,32 @@
+.c-program-details {
+  box-shadow: 0 2px 2px 0 rgba(178, 175, 196, 0.24);
+  font: 16px/1.5 $siteFont;
+  @include border-radius(8px, 8px, 8px, 8px);
+}
+
+.c-program-details__gallery {
+  @include border-radius(8px, 8px);
+}
+
+.c-program-details__content {
+  background: $white;
+  padding: 32px 9% 44px;
+}
+.c-program-details__text {
+
+  p:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.c-program-details__registration {
+  background: $orange;
+  text-align: center;
+  color: $white;
+  padding: 24px 9% 32px;
+  @include border-radius(0, 0, 8px, 8px);
+
+  p {
+    margin-bottom: 22px;
+  }
+}
