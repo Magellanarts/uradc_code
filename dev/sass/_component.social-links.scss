@@ -1,0 +1,12 @@
+.c-social-links {
+  font-size: 0;
+  margin-bottom: 20px;
+}
+
+.c-social-link {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}

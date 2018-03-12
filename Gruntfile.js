@@ -4,6 +4,14 @@ module.exports = function(grunt) {
 
         //compass
         compass: {
+            dev: {
+              options: {
+                sassDir: 'dev/sass',
+                cssDir: 'site',
+                specify: 'dev/sass/style.scss',
+                imagesDir: 'dev/i/'
+              }
+            },
             dist: {
                 options: {
                     sassDir: 'dev/sass',
@@ -15,6 +23,16 @@ module.exports = function(grunt) {
         },
 
         copy: {
+            dev: {
+              files: [
+                {
+                  expand: true,
+                  cwd: 'dev',
+                  src: ['*.html', '*.php', 'js/**/*', 'partials/*.php', 'i/**/*', 'fonts/**/*', 'data/**/*', 'components/**/*'],
+                  dest: 'site/'
+                }
+              ]
+            },
             dist: {
                 files: [
                     {
@@ -27,6 +45,18 @@ module.exports = function(grunt) {
             }
         },
       browserify: {
+        dev: {
+          files: {
+            // destination for transpiled js : source js
+            'site/js/site.js': 'site/js/site.js'
+          },
+          options: {
+            transform: [['babelify', { presets: "es2015" }]],
+            browserifyOptions: {
+              debug: true
+            }
+          }
+        },
         dist: {
           files: {
             // destination for transpiled js : source js
@@ -45,6 +75,9 @@ module.exports = function(grunt) {
             options: {
                 browsers: ['last 2 versions', 'ie 8', 'ie 9', 'ie 10']
             },
+            dev: {
+              src: 'site/style.css'
+            },
 
             dist: {
                 src: 'wp/wp-content/themes/summit/style.css'
@@ -53,14 +86,13 @@ module.exports = function(grunt) {
         },
 
         clean: {
+          dev: ['site/'],
             dist: ['wp/wp-content/themes/summit/']
-
         },
-
 
         watch: {
             files: ['dev/**'],
-            tasks: ['default'],
+            tasks: ['dev'],
             options: {
                 livereload: true
             }
@@ -77,5 +109,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-browserify');
 
 
-  grunt.registerTask('default', ['clean', 'copy', 'compass', 'browserify:dist', 'autoprefixer']);
+  grunt.registerTask('dev', ['clean:dev', 'copy:dev', 'compass:dev', 'browserify:dev', 'autoprefixer:dev']);
 }

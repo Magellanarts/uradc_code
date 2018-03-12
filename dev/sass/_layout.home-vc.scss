@@ -1,0 +1,40 @@
+.l-home-vc {
+  border-top: 8px solid #fff;
+  background-image: url(i/vc-graphic.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  @extend .u-std-font-size;
+  @extend .u-std-font-size--reg;
+
+  > .l-content-container {
+    padding: 438px 0 120px;
+    @media #{$medium} {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.l-home-vc__tag {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  background: #fff;
+  font: 700 16px/1 $siteFont;
+  text-transform: uppercase;
+  padding: 24px;
+}
+
+.l-home-vc__main {
+  margin-bottom: 40px;
+  @media #{$medium} {
+    margin-bottom: 0;
+    width: 54%;
+  }
+}
+
+.l-home-vc__secondary {
+  @media #{$medium} {
+    width: 32%;
+  }
+}

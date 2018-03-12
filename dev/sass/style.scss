@@ -1,16 +1,29 @@
 /*
-Theme Name: THEME
+Theme Name: URADC
 */
 
-@import "compass/reset";
-@import "compass/css3";
+@import "_reset";
 
 @import "settings.colors";
+@import "settings.fonts";
+@import "settings.queries";
 @import "settings.global";
 
+
 @import "base";
+@import "base.headings";
 
 @import "layout";
-@import "layout.grid";
+@import "layout.home-intro";
+@import "layout.home-vc";
+
+@import "component.btn";
+@import "component.hero";
+@import "component.site-logo";
+@import "component.site-header";
+@import "component.nav-toggle";
+@import "component.card";
+@import "component.site-footer";
+@import "component.social-links";
 
 @import "utilities";

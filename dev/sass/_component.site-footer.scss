@@ -1,0 +1,41 @@
+.c-site-footer {
+  display: flex;
+  background: $orange;
+  color: $white;
+  flex-direction: column;
+
+  @media #{$medium} {
+    flex-direction: row;
+  }
+}
+
+.c-site-footer__content {
+  box-sizing: border-box;
+  padding: 72px 7.5% 45px;
+
+  @media #{$medium} {
+    width: 63%;
+    padding: 72px 18% 45px 7.5%;
+  }
+}
+
+.c-site-footer__logo {
+  flex: 1;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  img {
+    background: $orange;
+  }
+}
+
+.c-site-footer__text {
+  margin-bottom: 74px;
+}
+
+.c-copyright {
+  font: 16px/1.5 $siteFont;
+}

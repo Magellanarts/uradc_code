@@ -1,5 +1,1 @@
-var doc = jQuery(document);
-
-doc.ready(function(){
-
-});
+var doc = document;

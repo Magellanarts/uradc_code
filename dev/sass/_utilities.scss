@@ -1,7 +1,95 @@
-.u-text-align-center {
-  text-align: center;
+.u-circle {
+  border-radius: 50%;
 }
 
-.u-align-self--center {
-  align-self: center;
+.u-hide\@med {
+  @media #{$medium} {
+    display: none;
+  }
 }
+
+.u-hide-below-med {
+  display: none;
+
+  @media #{$medium} {
+    display: block;
+    &--flex {
+      display: flex;
+    }
+  }
+}
+
+.u-body-copy {
+  p:not(:last-child),
+  ul:not(:last-child),
+  ol:not(:last-child) {
+    margin-bottom: 22px;
+  }
+
+  ul {
+    li {
+      position: relative;
+
+      &:before {
+        content: '•';
+        color: $orange;
+        position: absolute;
+        left: -18px;
+        top: 2px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+
+/*---------------
+ Font
+ --------------*/
+.u-std-font-size {
+  font: 300 18px/1.5 $roboto;
+
+  &--reg {
+    font-weight: 400;
+  }
+
+  @media #{$medium} {
+    font-size: 24px;
+  }
+}
+
+.u-lrg-font-size {
+  font: 300 26px/1.5 $roboto;
+
+  @media #{$medium} {
+    font-size: 32px;
+  }
+}
+
+.u-text--white {
+  color: $white;
+}
+
+.u-text--orange {
+  color: $orange;
+}
+
+
+/*---------------
+ Backgrounds
+ --------------*/
+.u-bg--gray {
+  background-color: $gray;
+}
+
+.u-bg--gray--light {
+  background-color: $gray--light;
+}
+
+
+
+
+

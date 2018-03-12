@@ -1,0 +1,33 @@
+h2 {
+  font: 700 40px/1.14 $roboto--slab;
+  color: $white;
+  margin-bottom: 32px;
+
+  a {
+    color: $orange;
+  }
+
+  @media #{$medium} {
+    font-size: 56px;
+  }
+}
+
+h3 {
+  font: 700 32px/1.2 $roboto;
+  color: $orange;
+  margin-bottom: 27px;
+
+  @media #{$medium} {
+    font-size: 40px;
+  }
+}
+
+h4 {
+  font: 700 24px/1.33 $roboto--slab;
+  color: $gray;
+}
+
+h5 {
+  font: 700 16px/1 $roboto--slab;
+  color: $orange;
+}
