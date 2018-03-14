@@ -10,18 +10,20 @@
   <div class="l-content-container">
     <div class="l-program-content">
       <div class="l-program-content__secondary">
-        <div class="l-pull-up-content">
+        <div class="l-pull-up-content l-pull-up-content--aside">
           <div class="c-program-details">
             <div class="c-program-details__gallery">
-
+              <img src="i/hero.jpeg">
             </div>
             <div class="c-program-details__content">
               <div class="c-program-details__header">
                 <h5>Program fee</h5>
-                <div class="c-program-details__price">€1950</div>
-                <div class="c-program-details__price__note">+    PayPal fee €79</div>
+                <div class="c-program-details__price-info">
+                  <div class="c-program-details__price">€1950</div>
+                  <div class="c-program-details__price__note">&nbsp;+&nbsp;&nbsp;&nbsp;PayPal fee €79</div>
+                </div>
               </div>
-              <div class="c-program-details__text">
+              <div class="c-program-details__text js-content-toggle__text" data-text="details">
                 <h5>Included in program fee</h5>
                 <p>11-day workshop</p>
 
@@ -42,16 +44,56 @@
                 <h5>Check-out</h5>
                 <p>Syracuse, Sicily, Italy, Monday, 8 Jan. 2018</p>
               </div>
+              <div class="c-program-details__toggle c-content-toggle-btn js-content-toggle" data-text="details">
+                <span class="c-program-details__toggle__text is-closed ">OPEN PROGRAM DETAILS&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i></span>
+                <span class="c-program-details__toggle__text is-open">Close PROGRAM DETAILS&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-up"></i></span>
+              </div>
             </div>
             <div class="c-program-details__registration">
               <p>Interested participants should click below to contact <strong>Mariella Poli</strong> and start the approval process for registration.</p>
               <a href="#" class="c-btn c-btn--white c-btn--full-width">Begin Registration</a>
             </div>
           </div>
+
+          <div class="c-author-card c-author-card--large u-hide-below-med u-hide-below-med--grid">
+            <div class="c-author-card__image" style="background-image: url(i/bio.jpg);"></div>
+            <div class="c-author-card__content">
+              <p><strong>“Urban Residency Art
+                & Design Collective”</strong>
+              Interdisciplinary SA Professor/Artist:<br>
+                Mariella Poli</p>
+
+              <a href="#">More about Mariella</a>
+            </div>
+          </div>
+
+          <div class="c-image-gallery js-image-gallery">
+            <a href="i/bio.jpg">
+              <img src="i/bio.jpg">
+            </a>
+            <a href="i/bio.jpg">
+              <img src="i/bio.jpg">
+            </a>
+            <a href="i/bio.jpg">
+              <img src="i/bio.jpg">
+            </a>
+            <a href="i/bio.jpg">
+              <img src="i/bio.jpg">
+            </a>
+            <a href="i/bio.jpg">
+              <img src="i/bio.jpg">
+            </a>
+            <a href="i/bio.jpg">
+              <img src="i/bio.jpg">
+            </a>
+            <a href="i/bio.jpg">
+              <img src="i/bio.jpg">
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="l-program-content__main u-body-copy">
+      <div class="l-program-content__main u-body-copy js-content-toggle__text" data-text="description">
         <h4>Description</h4>
 
 
@@ -72,10 +114,40 @@
 
           <p>The content of Manifesta 12 Palermo Atlas as articulated by Ippolito Pestellini Laparelli of OMA and the work takes its starting point from the awareness that there is no fixed way to approach or define Palermo. “The city cannot be reduced to a single statement or to a precise definition. It is rather a complex mosaic of fragments and identities emerging out of centuries of encounters and exchanges between civilizations. Its material archeology, cultural legacy, somatic traits and ecosystems are the tangible evidences of a long lasting syncretism. Today, the city can be considered an archipelago of the global: not a globalized city per se, but rather an incubator of different global conditions.</p>
       </div>
+
+      <div class="c-content-toggle-btn c-content-toggle-btn--top-border js-content-toggle" data-text="description">
+        <span class="is-closed ">OPEN PROGRAM Description&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i></span>
+        <span class="is-open">Close PROGRAM Description&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-up"></i></span>
+      </div>
+
+
+      <div class="c-author-card c-author-card--small u-hide@med">
+        <div class="c-author-card__image" style="background-image: url(i/bio.jpg);"></div>
+        <div class="c-author-card__content">
+          <p><strong>“Urban Residency Art
+            & Design Collective”</strong>
+            Interdisciplinary SA Professor/Artist:<br>
+            Mariella Poli</p>
+
+          <a href="#">More about Mariella</a>
+        </div>
+      </div>
     </div>
 
   </div>
 </section>
+<script>
+  var doc = document;
+  var toggleBtns = doc.querySelectorAll('.js-content-toggle');
 
+  for(var i = 0; i < toggleBtns.length; i++) {
+    toggleBtns[i].addEventListener('click', function () {
+      doc.querySelector('.js-content-toggle__text[data-text="' + this.getAttribute('data-text') + '"]').classList.toggle('is-open');
+      this.classList.toggle('is-toggled');
+    });
+  }
+
+
+</script>
 
 <?php include('footer.php'); ?>

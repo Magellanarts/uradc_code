@@ -11,6 +11,8 @@ Theme Name: URADC
 
 @import "tools";
 
+@import "lib.lightgallery";
+@import "lib.fontawesome";
 
 @import "base";
 @import "base.headings";
@@ -36,5 +38,8 @@ Theme Name: URADC
 @import "component.instructor-mini-card";
 @import "component.program-details";
 @import "component.form";
+@import "component.author-card";
+@import "component.image-gallery";
+@import "component.content-toggle-btn";
 
 @import "utilities";

@@ -21,5 +21,7 @@
 
 </div> <!-- close l-site-wrapper -->
 
+<script src="js/lib/lightgallery.js"></script>
+<script src="js/site.js"></script>
 </body>
 </html>

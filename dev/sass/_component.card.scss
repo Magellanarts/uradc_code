@@ -82,17 +82,5 @@
 }
 
 .c-card__attribution__link {
-  color: $orange;
-  font: 700 16px/1 $siteFont;
-  position: relative;
-
-  &:after {
-    content: '';
-    height: 2px;
-    width: 100%;
-    background: $orange;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-  }
+  @extend .u-underline-link;
 }

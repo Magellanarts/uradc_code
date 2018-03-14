@@ -1,0 +1,15 @@
+.c-image-gallery {
+  display: none;
+
+  > a {
+    width: 30%;
+    margin-bottom: 3.33333%;
+  }
+  
+  @media #{$medium} {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

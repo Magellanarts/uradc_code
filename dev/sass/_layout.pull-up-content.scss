@@ -8,8 +8,17 @@
   position: relative;
   top: -128px;
   z-index: 5;
+  margin-bottom: -50px;
+
+  &--aside {
+    margin-bottom: -140px;
+  }
 
   @media #{$medium} {
     top: -448px;
+
+    &--aside {
+      margin-bottom: -140px;
+    }
   }
 }

@@ -2,21 +2,70 @@
   box-shadow: 0 2px 2px 0 rgba(178, 175, 196, 0.24);
   font: 16px/1.5 $siteFont;
   @include border-radius(8px, 8px, 8px, 8px);
+  margin-bottom: 80px;
 }
 
 .c-program-details__gallery {
   @include border-radius(8px, 8px);
+
+  img {
+    @include border-radius(8px, 8px);
+    display: block;
+  }
+}
+
+.c-program-details__header {
+  border-bottom: 2px solid rgba(#b2afc4, .16);
+}
+
+.c-program-details__price-info {
+  font-size: 0;
+  padding-bottom: 28px;
+
+  > div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.c-program-details__price {
+  font: 700 24px/1 $siteFont;
+  padding-right:5px;
+}
+
+.c-program-details__price__note {
+  font: 16px/1 $siteFont;
 }
 
 .c-program-details__content {
   background: $white;
-  padding: 32px 9% 44px;
+  padding: 32px 9% 0;
 }
+
 .c-program-details__text {
+  height: 0;
+  overflow: hidden;
+  transition: .2s linear;
 
   p:not(:last-child) {
     margin-bottom: 16px;
   }
+
+  &.is-open {
+    padding-top: 30px;
+    height: auto;
+    padding-bottom: 44px;
+  }
+
+  @media #{$medium} {
+    padding-top: 30px;
+    height: auto;
+    padding-bottom: 44px;
+  }
+}
+
+.c-program-details__toggle {
+  @extend .c-content-toggle-btn;
 }
 
 .c-program-details__registration {

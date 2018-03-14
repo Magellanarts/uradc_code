@@ -1,0 +1,43 @@
+.c-content-toggle-btn {
+  text-align: center;
+  text-transform: uppercase;
+  font: 700 12px/1 $siteFont;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b2afc4;
+  cursor: pointer;
+
+  > span {
+    display: none;
+    transition: .2s linear;
+    width: 100%;
+
+    &.is-closed {
+      display: block;
+    }
+  }
+
+  &--top-border {
+    border-top: 2px solid rgba(#b2afc4, .16);
+  }
+
+  &.is-toggled {
+    border-top: 2px solid rgba(#b2afc4, .16);
+
+    > span {
+      &.is-open {
+        display: block;
+      }
+
+      &.is-closed {
+        display: none;
+      }
+    }
+  }
+
+  @media #{$medium} {
+    display: none;
+  }
+}

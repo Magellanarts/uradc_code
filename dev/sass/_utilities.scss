@@ -13,6 +13,10 @@
 
   @media #{$medium} {
     display: block;
+    
+    &--grid {
+      display: grid;
+    }
     &--flex {
       display: flex;
     }
@@ -22,6 +26,22 @@
 .alignLeft {
   float: left;
   margin: 0 30px 22px 0;
+}
+
+.u-underline-link {
+  color: $orange;
+  font: 700 16px/1 $siteFont;
+  position: relative;
+
+  &:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: $orange;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+  }
 }
 
 .u-body-copy {

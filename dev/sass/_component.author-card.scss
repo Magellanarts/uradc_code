@@ -1,0 +1,52 @@
+.c-author-card {
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: 38% 22% auto;
+  grid-template-rows: 130px 80px auto;
+
+  &--small {
+    padding-top: 60px;
+  }
+
+
+  @media #{$medium} {
+    display: flex;
+
+    > div {
+      flex: 1;
+    }
+  }
+}
+
+.c-author-card__image {
+  background-size: cover;
+  background-position: center top;
+  height: 207px;
+  grid-column: 1;
+  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-column-end: 3;
+
+  @media #{$medium} {
+    height: auto;
+  }
+}
+
+.c-author-card__content {
+  background: #fff;
+  padding: 24px;
+  font: 16px/1.5 $siteFont;
+  grid-column: 2;
+  grid-row: 2;
+  grid-row-end: 4;
+  grid-column-end: 4;
+
+  p {
+    margin-bottom: 18px;
+  }
+
+  a {
+    @extend .u-underline-link;
+
+  }
+}

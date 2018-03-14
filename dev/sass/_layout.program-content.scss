@@ -12,12 +12,23 @@
 }
 
 .l-program-content__main {
-  padding-top: 28px;
+  height: 0;
+  overflow: hidden;
+  transition: .2s linear;
   @extend .u-std-font-size;
-  padding-bottom: 110px;
+
+
+  &.is-open {
+    padding-top: 28px;
+    height: auto;
+    padding-bottom: 110px;
+  }
 
   @media #{$medium} {
     width: 56%;
+    height: auto;
     padding-top: 67px;
+    padding-bottom: 110px;
   }
 }
+
