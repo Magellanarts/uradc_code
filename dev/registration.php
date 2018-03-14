@@ -1,26 +1,27 @@
-<?php include('header.php'); ?>
-<section class="c-hero c-hero--gray" style="background-image: url(i/hero.jpeg);">
+<?php /**
+ * Template Name: Registration
+ */
+ get_header();
+ ?>
+<section class="c-hero c-hero--gray" style="background-image: url(<?php the_field('hero_image'); ?>);">
 
 </section>
 <section class="u-bg--gray--light">
   <div class="l-content-container l-pull-up-content-container">
     <div class="l-pull-up-content">
-      <div class="l-main-content u-body-copy u-lrg-font-size">
+      <div class="l-main-content  u-lrg-font-size">
         <div class="c-tag">Program Registration</div>
 
-        <h2>Type of Place: Taking Inspiration from Milan’s Neighborhoods</h2>
+        <h2><?php the_title(); ?></h2>
 
-        <div class="l-registration-container">
-          <div class="l-registration-container__intro u-std-font-size">
-            <p>Participants who wish to enroll in this Residency should submit a completed Questionnaire and a Website or digital portfolio to <a href="mailto:meta.newhouse@montana.edu">meta.newhouse@montana.edu</a>.</p>
-
-              <p>Participant placement interviews (via skype or phone) will be individually arranged after the questionnaire and portfolio are submitted and reviewed.</p>
-
-              <p>Participants will be notified of their acceptance shortly after the placement interviews.</p>
+        <div class="l-registration-container ">
+          <div class="l-registration-container__intro u-body-copy u-std-font-size">
+           <?php the_field('description'); ?>
           </div>
 
           <div class="l-registration-container__form">
-            <form class="c-form js-registration-form">
+            <?php the_field('form'); ?>
+            <!-- form class="c-form js-registration-form">
               <div class="c-form__field">
                 <label class="c-form__label" for="name">Name</label>
                 <input type="text" class="c-form__input" id="name" name="name">
@@ -51,7 +52,7 @@
 
               <button type="submit" class="c-btn c-btn--gray">Submit Registration</button>
 
-            </form>
+            </form -->
           </div>
         </div>
 
@@ -59,4 +60,4 @@
     </div>
   </div>
 </section>
-<?php include('footer.php'); ?>
+<?php get_footer(); ?>

@@ -1,5 +1,10 @@
 .l-site-wrapper {
+  position: relative;
+  transition: .2s linear;
 
+  &.is-open {
+    transform: translateX(-280px);
+  }
 }
 
 .l-content-container {
