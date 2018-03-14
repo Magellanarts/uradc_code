@@ -43,12 +43,16 @@
   position: relative;
   z-index: 3;
   padding-top: 44px;
-  padding-left: 44%;
+
   color: $white;
   font: 24px/1.33 $siteFont;
 
   h2 {
     margin-bottom: 20px;
+  }
+
+  @media #{$medium} {
+    padding-left: 44%;
   }
 }
 
