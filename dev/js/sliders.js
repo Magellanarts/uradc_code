@@ -20,6 +20,7 @@ var heroSlider = tns({
   autoplay: true,
   controls: false,
   nav: false,
+  mode: 'gallery',
   autoplayButtonOutput: false,
   axis: 'horizontal'
 });
