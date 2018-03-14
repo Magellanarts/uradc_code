@@ -15,7 +15,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     sassDir: 'dev/sass',
-                    cssDir: 'wp/wp-content/themes/summit',
+                    cssDir: 'wp/wp-content/themes/uradc',
                     specify: 'dev/sass/style.scss',
                     imagesDir: 'dev/i/'
                 }
@@ -38,8 +38,8 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         cwd: 'dev',
-                        src: ['*.html', '*.php', 'js/**/*', 'partials/*.php', 'i/**/*', 'fonts/**/*', 'data/**/*'],
-                        dest: 'wp/wp-content/themes/summit/'
+                        src: ['*.html', '*.php', 'js/**/*', 'page-templates/*.php', 'i/**/*', 'fonts/**/*', 'data/**/*'],
+                        dest: 'wp/wp-content/themes/uradc/'
                     }
                 ]
             }
@@ -80,19 +80,19 @@ module.exports = function(grunt) {
             },
 
             dist: {
-                src: 'wp/wp-content/themes/summit/style.css'
+                src: 'wp/wp-content/themes/uradc/style.css'
             }
 
         },
 
         clean: {
           dev: ['site/'],
-            dist: ['wp/wp-content/themes/summit/']
+            dist: ['wp/wp-content/themes/uradc/']
         },
 
         watch: {
             files: ['dev/**'],
-            tasks: ['dev'],
+            tasks: ['dist'],
             options: {
                 livereload: true
             }
@@ -106,8 +106,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-browserify');
+   // grunt.loadNpmTasks('grunt-browserify');
 
 
-  grunt.registerTask('dev', ['clean:dev', 'copy:dev', 'compass:dev', 'browserify:dev', 'autoprefixer:dev']);
+  grunt.registerTask('dev', ['clean:dev', 'copy:dev', 'compass:dev', 'autoprefixer:dev']);
+  grunt.registerTask('dist', ['clean:dist', 'copy:dist', 'compass:dist', 'autoprefixer:dist']);
 }

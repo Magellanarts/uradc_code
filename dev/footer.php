@@ -1,27 +1,27 @@
 <footer class="c-site-footer">
   <div class="c-site-footer__content">
     <div class="c-site-footer__text u-std-font-size u-text--white">
-      <p>Urban Residencies Art & Design Collective take place in different cities in Italy and the content of each residency is reflected in the specific cultures from which these cities are known.</p>
+      <?php the_field('footer_description', 'option'); ?>
     </div>
 
     <div class="c-social-links">
-      <a href="#" class="c-social-link"><img src="i/twitter-icon.svg"  width="40"></a>
-      <a href="#" class="c-social-link"><img src="i/facebook-icon.svg"  width="40"></a>
+      <a href="<?php the_field('twitter', 'option'); ?>" target="_blank" class="c-social-link"><img src="<?php echo get_template_directory_uri(); ?>/i/twitter-icon.svg"  width="40"></a>
+      <a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="c-social-link"><img src="<?php echo get_template_directory_uri(); ?>/i/facebook-icon.svg"  width="40"></a>
     </div>
 
     <div class="c-copyright">
-      ©2018 Urban Residency Art & Design Collective
+      <?php the_field('copyright', 'option'); ?>
     </div>
   </div>
 
   <div class="c-site-footer__logo">
-    <img src="i/footer-logo.svg">
+    <img src="<?php the_field('logo', 'option'); ?>">
   </div>
 </footer>
 
 </div> <!-- close l-site-wrapper -->
 
+<?php wp_footer(); ?>
 <script src="js/lib/lightgallery.js"></script>
-<script src="js/site.js"></script>
 </body>
 </html>

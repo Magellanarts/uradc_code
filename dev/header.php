@@ -3,8 +3,7 @@
 <head>
     <title>URADC</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <?php wp_head(); ?>
 </head>
 <body>
 <div class="l-site-wrapper js-site-wrapper">
