@@ -15,10 +15,29 @@ $headshot = get_field('image');
 wp_reset_postdata();
 
 ?>
-<section class="c-hero c-hero--orange"  style="background-image: url(i/hero.jpeg);">
+<section class="c-hero c-hero--orange">
+  <div class="c-hero__slider js-hero-slider">
+    <?php
+            if( have_rows('image_gallery') ):
+                while ( have_rows('image_gallery') ) : the_row(); ?>
+    <div class="c-hero__slider__image" style="background-image: url(<?php the_sub_field('gallery_image'); ?>);"></div>
+    <?php
+                endwhile;
+            endif;
+            ?>
+  </div>
   <div class="l-content-container">
     <div class="c-hero__offset-content">
       <h2><?php the_title(); ?></h2>
+
+      <div class="c-hero__offset-content__divider">
+        <img src="<?php echo get_template_directory_uri(); ?>/i/path-2.svg">
+      </div>
+
+
+      <div><strong><?php the_field('date'); ?></strong></div>
+      <div><?php the_field('location'); ?></div>
+
     </div>
   </div>
 </section>
@@ -28,8 +47,17 @@ wp_reset_postdata();
       <div class="l-program-content__secondary">
         <div class="l-pull-up-content l-pull-up-content--aside">
           <div class="c-program-details">
-            <div class="c-program-details__gallery">
-              <img src="i/hero.jpeg">
+            <div class="c-program-details__gallery js-card-slider">
+              <?php
+            if( have_rows('image_gallery') ):
+                while ( have_rows('image_gallery') ) : the_row(); ?>
+              <div class="c-program-details__gallery__image" style="background-image: url(<?php the_sub_field('gallery_image'); ?>);">
+
+              </div>
+              <?php
+                endwhile;
+            endif;
+            ?>
             </div>
             <div class="c-program-details__content">
               <div class="c-program-details__header">
@@ -75,27 +103,16 @@ wp_reset_postdata();
           </div>
 
           <div class="c-image-gallery js-image-gallery">
-            <a href="i/bio.jpg">
-              <img src="i/bio.jpg">
+            <?php
+            if( have_rows('image_gallery') ):
+                while ( have_rows('image_gallery') ) : the_row(); ?>
+            <a href="<?php the_sub_field('gallery_image'); ?>">
+              <img src="<?php the_sub_field('gallery_image'); ?>">
             </a>
-            <a href="i/bio.jpg">
-              <img src="i/bio.jpg">
-            </a>
-            <a href="i/bio.jpg">
-              <img src="i/bio.jpg">
-            </a>
-            <a href="i/bio.jpg">
-              <img src="i/bio.jpg">
-            </a>
-            <a href="i/bio.jpg">
-              <img src="i/bio.jpg">
-            </a>
-            <a href="i/bio.jpg">
-              <img src="i/bio.jpg">
-            </a>
-            <a href="i/bio.jpg">
-              <img src="i/bio.jpg">
-            </a>
+            <?php
+                endwhile;
+            endif;
+            ?>
           </div>
         </div>
       </div>
@@ -123,6 +140,9 @@ wp_reset_postdata();
     </div>
   </div>
 </section>
+
+
+
 <script>
   var doc = document;
   var toggleBtns = doc.querySelectorAll('.js-content-toggle');

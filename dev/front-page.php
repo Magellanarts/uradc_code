@@ -8,7 +8,7 @@
     </div>
   </div>
 </section>
-<section class="l-home-intro u-bg--gray--light" style="background-image: url(<?php the_field('residencies_backgroundd_graphic'); ?>);">
+<section class="l-home-intro u-bg--gray--light" style="background-image: url(<?php the_field('residencies_background_graphic'); ?>);">
   <div class="l-content-container">
     <div>
       <?php
@@ -99,7 +99,7 @@
     </div>
   </div>
 </section>
-<section class="l-home-vc" style="background-image: url(<?php the_field('vc_background_image'); ?>);">
+<section class="l-home-vc" style="background-image: url(<?php the_field('vc_background_graphic'); ?>);">
   <div class="l-content-container">
     <div class="l-home-vc__tag">
       <?php the_field('vc_tag'); ?>

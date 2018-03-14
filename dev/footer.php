@@ -20,8 +20,13 @@
 </footer>
 
 </div> <!-- close l-site-wrapper -->
-
+<script>
+  // mobile navigation
+  document.querySelector('.js-mobile-nav-btn').addEventListener('click', function () {
+    document.querySelector('.js-site-wrapper').classList.toggle('is-open');
+    document.querySelector('.js-mobile-navigation').classList.toggle('is-open');
+  });
+</script>
 <?php wp_footer(); ?>
-<script src="js/lib/lightgallery.js"></script>
 </body>
 </html>

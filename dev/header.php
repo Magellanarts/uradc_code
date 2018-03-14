@@ -6,11 +6,27 @@
     <?php wp_head(); ?>
 </head>
 <body>
+<nav class="c-mobile-navigation js-mobile-navigation">
+    <?php
+                      $menuParameters = array(
+                       'container'       => false,
+    'echo' => false,
+    'items_wrap' => '%3$s',
+    'depth' => 0,
+    'theme_location' => 'primary'
+    );
+
+    echo strip_tags(wp_nav_menu( $menuParameters ), '
+    <ul>
+        <li><a>' );
+
+            ?>
+</nav>
 <div class="l-site-wrapper js-site-wrapper">
 <header class="c-site-header">
     <div class="l-content-container">
-        <a href="#" class="c-site-logo"><img src="<?php echo get_template_directory_uri(); ?>/i/header-logo.svg"></a>
+        <a href="<?php echo site_url(); ?>" class="c-site-logo"><img src="<?php echo get_template_directory_uri(); ?>/i/header-logo.svg"></a>
 
-        <div class="c-nav-toggle js-nav-toggle"></div>
+        <div class="c-nav-toggle js-mobile-nav-btn"></div>
     </div>
 </header>
