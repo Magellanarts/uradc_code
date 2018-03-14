@@ -1,5 +1,20 @@
 <?php
-get_header(); ?>
+get_header();
+
+
+
+$instructor = get_field('instructor');
+$post = $instructor;
+setup_postdata($post);
+$name = get_the_title();
+$name = explode(' ', $name);
+$link = get_permalink();
+$title = get_field('title');
+$headshot = get_field('image');
+
+wp_reset_postdata();
+
+?>
 <section class="c-hero c-hero--orange"  style="background-image: url(i/hero.jpeg);">
   <div class="l-content-container">
     <div class="c-hero__offset-content">
@@ -48,14 +63,14 @@ get_header(); ?>
           </div>
 
           <div class="c-author-card c-author-card--large u-hide-below-med u-hide-below-med--grid">
-            <div class="c-author-card__image" style="background-image: url(i/bio.jpg);"></div>
+            <div class="c-author-card__image" style="background-image: url(<?php echo $headshot; ?>);"></div>
             <div class="c-author-card__content">
               <p><strong>“Urban Residency Art
                 & Design Collective”</strong>
-              Interdisciplinary SA Professor/Artist:<br>
-                Mariella Poli</p>
+                <?php echo $title; ?>:<br>
+                <?php echo $name[0] . ' ' . $name[1]; ?></p>
 
-              <a href="#">More about Mariella</a>
+              <a href="<?php echo $link; ?>">More about <?php echo $name[0]; ?></a>
             </div>
           </div>
 
@@ -95,14 +110,14 @@ get_header(); ?>
       </div>
 
       <div class="c-author-card c-author-card--small u-hide@med">
-        <div class="c-author-card__image" style="background-image: url(i/bio.jpg);"></div>
+        <div class="c-author-card__image" style="background-image: url(<?php echo $headshot; ?>);"></div>
         <div class="c-author-card__content">
           <p><strong>“Urban Residency Art
             & Design Collective”</strong>
-            Interdisciplinary SA Professor/Artist:<br>
-            Mariella Poli</p>
+            <?php echo $title; ?>:<br>
+            <?php echo $name[0] . ' ' . $name[1]; ?></p>
 
-          <a href="#">More about Mariella</a>
+          <a href="<?php echo $link; ?>">More about <?php echo $name[0]; ?></a>
         </div>
       </div>
     </div>

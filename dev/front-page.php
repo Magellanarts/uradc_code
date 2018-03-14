@@ -13,38 +13,54 @@
     <div>
       <?php
       if( have_rows('residencies_list') ):
-          while ( have_rows('residencies_list') ) : the_row(); ?>
+          while ( have_rows('residencies_list') ) : the_row();
+        $residency = get_sub_field('residency');
+        $post = $residency;
+        setup_postdata($post);
+
+        $instructor = get_field('instructor');
+        $post = $instructor;
+        setup_postdata($post);
+        $name = get_the_title();
+        $link = get_permalink();
+        $headshot = get_field('image');
+
+        $post = $residency;
+        setup_postdata($post);
+
+      ?>
       <section class="c-card">
         <div class="c-card__image-container">
-          <div class="c-card__image">
-            <div class="c-tag c-card__tag">Interdisciplinary</div>
+          <div class="c-card__image" style="background-image: url(<?php the_field('featured_image'); ?>);">
+            <div class="c-tag c-card__tag"><?php the_field('tag'); ?></div>
           </div>
           <div class="c-card__attribution c-card__attribution u-hide-below-med u-hide-below-med--flex">
-            <img src="i/headshot.jpg" class="c-card__attribution__headshot">
+            <img src="<?php echo $headshot; ?>" class="c-card__attribution__headshot">
             <div>
-              <div class="c-card__attribution__name">Mariella Poli</div>
-              <a href="#" class="c-card__attribution__link">Learn More</a>
+              <div class="c-card__attribution__name"><?php echo $name; ?></div>
+              <a href="<?php echo $link; ?>" class="c-card__attribution__link">Learn More</a>
             </div>
           </div>
         </div>
 
         <div class="c-card__content">
-          <h2 class="c-card__title"><a href="#">Outskirts of Urban Blueprint</a></h2>
-          <div class="c-card__meta">21 June - 8 July, 2018</div>
+          <h2 class="c-card__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+          <div class="c-card__meta"><?php the_field('date'); ?></div>
           <div class="c-card__text">
-            <p>Designed to accommodate a collective of 15 participants whose creative art, design and architectural interest reside in the evolutions of community within a diverse cultural landscape.</p>
+            <?php the_field('short_description'); ?>
           </div>
 
           <div class="c-card__attribution c-card__attribution u-hide@med">
-            <img src="i/headshot.jpg" class="c-card__attribution__headshot">
+            <img src="<?php echo $headshot; ?>" class="c-card__attribution__headshot">
             <div>
-              <div class="c-card__attribution__name">Mariella Poli</div>
-              <a href="#" class="c-card__attribution__link">Learn More</a>
+              <div class="c-card__attribution__name"><?php echo $name; ?></div>
+              <a href="<?php echo $link; ?>" class="c-card__attribution__link">Learn More</a>
             </div>
           </div>
         </div>
       </section>
       <?php
+            wp_reset_postdata();
           endwhile;
       endif;
       ?>

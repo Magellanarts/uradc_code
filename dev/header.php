@@ -9,7 +9,7 @@
 <div class="l-site-wrapper js-site-wrapper">
 <header class="c-site-header">
     <div class="l-content-container">
-        <a href="#" class="c-site-logo"><img src="i/header-logo.svg"></a>
+        <a href="#" class="c-site-logo"><img src="<?php echo get_template_directory_uri(); ?>/i/header-logo.svg"></a>
 
         <div class="c-nav-toggle js-nav-toggle"></div>
     </div>
