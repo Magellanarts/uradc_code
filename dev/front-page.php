@@ -109,7 +109,7 @@
 
       <?php the_field('vc_intro_text'); ?>
 
-      <p><a href="<?php the_field('vc_button_link'); ?>" class="c-btn c-btn--orange"><?php the_field('vc_button_text'); ?></a></p>
+      <p><a target="_blank" href="<?php the_field('vc_button_link'); ?>" class="c-btn c-btn--orange"><?php the_field('vc_button_text'); ?></a></p>
     </div>
 
     <div class="l-home-vc__secondary u-body-copy">
@@ -117,5 +117,4 @@
     </div>
   </div>
 </section>
-
 <?php get_footer(); ?>
