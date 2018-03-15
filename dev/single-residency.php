@@ -68,16 +68,26 @@ wp_reset_postdata();
                 </div>
               </div>
               <div class="c-program-details__text js-content-toggle__text" data-text="details">
+                <?php if(get_field('included_in_fee')): ?>
                 <h5>Included in program fee</h5>
                 <?php the_field('included_in_fee'); ?>
+                <?php endif; ?>
 
+                <?php if(get_field('not_included_in_fee')): ?>
                 <h5>Not included in program fee</h5>
                 <?php the_field('not_included_in_fee'); ?>
+                <?php endif; ?>
+
+                <?php if(get_field('check_in')): ?>
                 <h5>Check-in</h5>
                 <?php the_field('check_in'); ?>
+                <?php endif; ?>
 
+                <?php if(get_field('check_out')): ?>
                 <h5>Check-out</h5>
                 <?php the_field('check_out'); ?>
+                <?php endif; ?>
+
               </div>
               <div class="c-program-details__toggle c-content-toggle-btn js-content-toggle" data-text="details">
                 <span class="c-program-details__toggle__text is-closed ">OPEN PROGRAM DETAILS&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i></span>
@@ -105,9 +115,13 @@ wp_reset_postdata();
           <div class="c-image-gallery js-image-gallery">
             <?php
             if( have_rows('image_gallery') ):
-                while ( have_rows('image_gallery') ) : the_row(); ?>
+                while ( have_rows('image_gallery') ) : the_row();
+                $imageSmall = get_sub_field('gallery_image');
+        $imageSmall = str_replace('.jpg', '-150x150.jpg', $imageSmall);
+        $imageSmall = str_replace('.png', '-150x150.png', $imageSmall);
+          ?>
             <a href="<?php the_sub_field('gallery_image'); ?>">
-              <img src="<?php the_sub_field('gallery_image'); ?>">
+              <img src="<?php echo $imageSmall; ?>">
             </a>
             <?php
                 endwhile;

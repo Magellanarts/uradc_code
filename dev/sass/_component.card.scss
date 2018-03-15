@@ -38,6 +38,7 @@
 .c-card__image {
   height: 360px;
   background-size: cover;
+  background-position: center center;
   @media #{$medium} {
     height: 536px;
   }

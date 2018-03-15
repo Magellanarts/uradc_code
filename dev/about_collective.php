@@ -28,10 +28,14 @@
             $instructor = get_sub_field('instructor');
             $post = $instructor;
             setup_postdata($post);
+
+            $headshot = get_field('image');
+             $headshot = str_replace('.jpg', '-150x150.jpg', $headshot);
+
           ?>
           <div class="c-instructor-mini-card">
             <div class="c-instructor-mini-card__headshot">
-              <a href="<?php the_permalink(); ?>"><img src="<?php the_field('image'); ?>"></a>
+              <a href="<?php the_permalink(); ?>"><img src="<?php echo $headshot; ?>"></a>
             </div>
             <div class="c-instructor-mini-card__deatils">
               <h4 class="c-instructor-mini-card__name u-text--orange"><a class="u-text--orange" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>

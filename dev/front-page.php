@@ -25,6 +25,8 @@
         $link = get_permalink();
         $headshot = get_field('image');
 
+        $headshot = str_replace('.jpg', '-150x150.jpg', $headshot);
+
         $post = $residency;
         setup_postdata($post);
 
