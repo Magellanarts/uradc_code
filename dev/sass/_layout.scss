@@ -8,8 +8,11 @@
 }
 
 .l-content-container {
-  max-width: 1168px;
+  max-width: 1200px;
   margin: 0 auto;
-  width: 85%;
+  width: 90%;
   position: relative;
+  @media #{$large} {
+    width: 85%;
+  }
 }

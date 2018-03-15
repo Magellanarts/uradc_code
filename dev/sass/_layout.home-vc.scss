@@ -26,6 +26,9 @@
 
 .l-home-vc__main {
   margin-bottom: 40px;
+  h3 {
+    color: $gray;
+  }
   @media #{$medium} {
     margin-bottom: 0;
     width: 54%;

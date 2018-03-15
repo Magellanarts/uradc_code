@@ -19,7 +19,7 @@
   li {
     padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid rgba(#ecf0f1, .5);
+    border-bottom: 1px solid rgba(#ecf0f1, .1);
     a {
       display: block;
       margin-bottom:  6px;
@@ -54,7 +54,7 @@
       }
 
       a {
-        font: 300 16px/24px $siteFont;
+        font: 300 14px/20px $siteFont;
         text-transform: none;
         margin-bottom: 6px;
       }

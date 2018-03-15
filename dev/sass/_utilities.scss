@@ -79,7 +79,7 @@
  Font
  --------------*/
 .u-std-font-size {
-  font: 300 18px/1.5 $roboto;
+  font: 300 16px/1.5 $roboto;
 
   &--reg {
     font-weight: 400;
@@ -91,7 +91,7 @@
 }
 
 .u-lrg-font-size {
-  font: 300 26px/1.5 $roboto;
+  font: 300 24px/1.5 $roboto;
 
   @media #{$medium} {
     font-size: 32px;

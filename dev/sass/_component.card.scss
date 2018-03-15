@@ -36,8 +36,11 @@
 }
 
 .c-card__image {
-  height: 536px;
+  height: 360px;
   background-size: cover;
+  @media #{$medium} {
+    height: 536px;
+  }
 }
 
 .c-card__content {
