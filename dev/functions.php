@@ -11,7 +11,7 @@ function twentyfourteen_scripts() {
     wp_enqueue_style( 'gfonts', '//fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,400i,700' );
 
 
-    if(is_page_template('registration.php')):
+    if(is_page_template('registration.php') || is_single()):
       wp_enqueue_script('jquery', false, array(), false, false);
     else:
       wp_deregister_script('jquery'); // Remove WordPress core's jQuery
@@ -19,7 +19,7 @@ function twentyfourteen_scripts() {
 
     if(is_single()):
        wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/js/lib/lightgallery.js', array( ), 1, true );
-       wp_enqueue_script( 'tinyslider', get_template_directory_uri() . '/js/lib/tinyslider.js', array( ), 1, true );
+       wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/lib/slick.js', array( ), 1, true );
        wp_enqueue_script( 'sliders', get_template_directory_uri() . '/js/sliders.js', array( ), 1, true );
     endif;
 

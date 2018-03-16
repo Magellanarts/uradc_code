@@ -1,8 +1,6 @@
 <?php
 get_header();
 
-
-
 $instructor = get_field('instructor');
 $post = $instructor;
 setup_postdata($post);
@@ -47,7 +45,7 @@ wp_reset_postdata();
       <div class="l-program-content__secondary">
         <div class="l-pull-up-content l-pull-up-content--aside">
           <div class="c-program-details">
-            <div class="c-program-details__gallery js-card-slider">
+            <div class="c-program-details__gallery js-program-details-gallery">
               <?php
             if( have_rows('image_gallery') ):
                 while ( have_rows('image_gallery') ) : the_row(); ?>

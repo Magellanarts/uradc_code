@@ -1,30 +1,23 @@
 // options come from
-// https://github.com/ganlanyuan/tiny-slider
+// https://github.com/kenwheeler/slick
 
 
-//card slider
-var cardSlider = tns({
-  container: '.js-card-slider',
-  items: 1,
+jQuery('.js-program-details-gallery').slick({
+  slidesToScroll: 1,
+  slidesToShow: 1,
   autoplay: true,
-  controls: false,
-  nav: false,
-  autoplayButtonOutput: false,
-  axis: 'horizontal'
-});
-
-
-var heroSlider = tns({
-  container: '.js-hero-slider',
-  items: 1,
-  autoplay: true,
-  controls: false,
-  nav: false,
-  mode: 'gallery',
-  autoplayButtonOutput: false,
-  axis: 'horizontal'
+  autoplaySpeed: 4000,
+  arrows: false
 });
 
 
 
+jQuery('.js-hero-slider').slick({
+  slidesToScroll: 1,
+  slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  arrows: false,
+  fade: true
+});
 
