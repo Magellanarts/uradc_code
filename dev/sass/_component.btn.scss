@@ -7,22 +7,42 @@
   box-sizing: border-box;
   text-align: center;
   letter-spacing: 2px;
+  margin-top: 16px;
   font: 700 16px/1 $siteFont;
   padding: 18px 28px;
+  transition: all .4s linear;
 
   &--white {
     color: $white;
     border-color: $white;
+    opacity: 1;
+    transition: all .4s linear;
+    &:hover {
+      opacity: .8;
+      transition: all .4s linear;
+    }
   }
 
   &--orange {
     color: $orange;
     border-color: $orange;
+    transition: all .4s linear;
+    &:hover {
+      border-color: $gray;
+      color: $gray;
+      transition: all .4s linear;
+    }
   }
 
   &--gray {
     color: $gray;
     border-color: $gray;
+    transition: all .4s linear;
+    &:hover {
+      border-color: $orange;
+      color: $orange;
+      transition: all .4s linear;
+    }
   }
 
   &--full-width {

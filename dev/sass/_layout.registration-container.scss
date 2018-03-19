@@ -1,5 +1,5 @@
 .l-registration-container {
-  @media #{$medium} {
+  @media #{$large} {
     display: flex;
     justify-content: space-between;
   }
@@ -7,7 +7,7 @@
 
 .l-registration-container__intro {
   margin-bottom: 55px;
-  @media #{$medium} {
+  @media #{$large} {
     width: 35%;
     margin-bottom: 0;
   }
@@ -15,7 +15,7 @@
 
 .l-registration-container__form {
 
-  @media #{$medium} {
+  @media #{$large} {
     width: 55%;
   }
 }

@@ -1,18 +1,16 @@
 .l-site-wrapper {
   position: relative;
-  transition: .2s linear;
+  transition: .24s linear;
 
   &.is-open {
-    transform: translateX(-280px);
+    transform: translateX(-320px);
+    transition: .24s linear;
   }
 }
 
 .l-content-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  width: 90%;
+  width: 88%;
   position: relative;
-  @media #{$large} {
-    width: 85%;
-  }
 }

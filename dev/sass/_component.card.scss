@@ -45,7 +45,7 @@
 }
 
 .c-card__content {
-  padding: 65px 10.5%;
+  padding: 48px 8%;
   box-sizing: border-box;
   background: $white;
   grid-column: 2;
@@ -53,12 +53,16 @@
   z-index: 4;
   grid-row-end: 4;
   grid-column-end: 4;
+
+  @media #{$large} {
+    padding: 64px 80px;
+  }
 }
 
 .c-card__meta {
   font: 700 24px/1 $siteFont;
   color: $gray;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .c-card__text {

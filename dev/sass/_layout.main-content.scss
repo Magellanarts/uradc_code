@@ -10,3 +10,36 @@
 .l-main-content__intro {
   padding-bottom: 60px;
 }
+
+
+// Prototype card interaction
+.c-card__content, .c-card__image-container {
+  transition: all 1s linear;
+}
+
+.c-card {
+  .c-tag {
+    background: $gray;
+  }
+  &:hover {
+    .c-card__content {
+      margin-top: 0;
+
+      @media #{$medium} {
+        margin-top: -24px;
+        transition: all 1s linear;
+      }
+    }
+    .c-card__image-container {
+      margin-top: 0;
+
+      @media #{$medium} {
+        margin-top: 16px;
+        transition: all 1.5s ease-out;
+      }
+    }
+    .c-tag {
+      background: $orange;
+    }
+  }
+}

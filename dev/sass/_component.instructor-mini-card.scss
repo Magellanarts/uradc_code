@@ -5,10 +5,20 @@
 .c-instructor-mini-card__headshot {
   width: 144px;
   margin-right: 25px;
+  img {
+    border-radius: 50%;
+  }
 }
 
 .c-instructor-mini-card__name {
   margin-bottom: 2px;
+  a {
+    transition: .2s linear;
+    &:hover {
+      color: $gray;
+      transition: .2s linear;
+    }
+  }
 }
 
 .c-instructor-mini-card__deatils {

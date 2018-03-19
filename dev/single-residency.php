@@ -26,7 +26,7 @@ wp_reset_postdata();
   </div>
   <div class="l-content-container">
     <div class="c-hero__offset-content">
-      <h2><?php the_title(); ?></h2>
+      <h1><?php the_title(); ?></h1>
 
       <div class="c-hero__offset-content__divider">
         <img src="<?php echo get_template_directory_uri(); ?>/i/path-2.svg">
@@ -101,10 +101,8 @@ wp_reset_postdata();
           <div class="c-author-card c-author-card--large u-hide-below-med u-hide-below-med--grid">
             <div class="c-author-card__image" style="background-image: url(<?php echo $headshot; ?>);"></div>
             <div class="c-author-card__content">
-              <p><strong>“Urban Residency Art
-                & Design Collective”</strong>
-                <?php echo $title; ?>:<br>
-                <?php echo $name[0] . ' ' . $name[1]; ?></p>
+              <p><strong><?php echo $name[0] . ' ' . $name[1]; ?></strong><br>
+                <?php echo $title; ?></p>
 
               <a href="<?php echo $link; ?>">More about <?php echo $name[0]; ?></a>
             </div>
@@ -141,10 +139,9 @@ wp_reset_postdata();
       <div class="c-author-card c-author-card--small u-hide@med">
         <div class="c-author-card__image" style="background-image: url(<?php echo $headshot; ?>);"></div>
         <div class="c-author-card__content">
-          <p><strong>“Urban Residency Art
-            & Design Collective”</strong>
-            <?php echo $title; ?>:<br>
-            <?php echo $name[0] . ' ' . $name[1]; ?></p>
+          <p><strong><?php echo $name[0] . ' ' . $name[1]; ?></strong><br>
+            <?php echo $title; ?>
+            </p>
 
           <a href="<?php echo $link; ?>">More about <?php echo $name[0]; ?></a>
         </div>

@@ -2,7 +2,7 @@
 <section class="c-hero c-hero--orange" style="background-image: url(<?php the_field('hero_image'); ?>);">
   <div class="l-content-container">
     <div class="c-hero__content">
-      <h2 class="c-hero__heading"><?php the_field('hero_heading'); ?></h2>
+      <h1 class="c-hero__heading"><?php the_field('hero_heading'); ?></h1>
 
       <a href="<?php the_field('hero_button_link'); ?>" class="c-btn c-btn--white"><?php the_field('hero_button_text'); ?></a>
     </div>

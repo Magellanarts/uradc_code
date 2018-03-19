@@ -21,20 +21,16 @@
 .c-author-card__image {
   background-size: cover;
   background-position: center top;
-  height: 207px;
+  height: 240px;
   grid-column: 1;
   grid-row-end: 3;
   grid-row-start: 1;
   grid-column-end: 3;
-
-  @media #{$medium} {
-    height: auto;
-  }
 }
 
 .c-author-card__content {
   background: #fff;
-  padding: 24px;
+  padding: 32px;
   font: 16px/1.5 $siteFont;
   grid-column: 2;
   grid-row: 2;

@@ -45,6 +45,17 @@
 }
 
 .u-body-copy {
+  img {
+    margin-top: 8px;
+    border-radius: 50%;
+    margin-right: 24px;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+  }
+  h2 {
+    margin-bottom: 56px;
+  }
   p:not(:last-child),
   ul:not(:last-child),
   ol:not(:last-child) {
@@ -71,6 +82,9 @@
 
   a {
     color: $orange;
+    &:hover {
+      color: $gray;
+    }
   }
 }
 
@@ -93,7 +107,7 @@
 .u-lrg-font-size {
   font: 300 24px/1.5 $roboto;
 
-  @media #{$medium} {
+  @media #{$large} {
     font-size: 32px;
   }
 }

@@ -1,18 +1,30 @@
 //Maybe convert h tags up one level for seo. H1 should exist. 
 
-h2 {
+h2,h1 {
   font: 700 40px/1.14 $roboto--slab;
-  color: $white;
+  color: $gray;
   margin-bottom: 32px;
 
   a {
     color: $orange;
+    transition: color .24s ease-in-out;
+    &:hover {
+      color: $gray;
+      transition: color .24s ease-in-out;
+    }
   }
 
   @media #{$medium} {
     font-size: 56px;
   }
 }
+
+// h1 {
+//   font-size: 40px;
+//   @media #{$medium} {
+//     font-size: 64px;
+//   }
+// }
 
 h3 {
   font: 700 32px/1.2 $roboto;

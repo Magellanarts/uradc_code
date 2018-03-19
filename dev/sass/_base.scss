@@ -30,3 +30,19 @@ li {
 a {
   text-decoration: none;
 }
+.c-card__attribution__link {
+  transition: all .24s ease-in-out;
+  &:hover {
+    color: $gray;
+    transition: all .24s ease-in-out;
+  }
+}
+.u-underline-link, .c-card__attribution__link, .c-author-card__content a {
+  transition: all .24s ease-in-out;
+  &:hover {
+    &:after {
+      background: $gray;
+      transition: all .24s ease-in-out;
+    }
+  }
+}

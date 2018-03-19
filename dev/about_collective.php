@@ -13,12 +13,12 @@
         <div class="l-main-content__intro u-lrg-font-size">
           <div class="c-tag"><?php the_field('page_tag'); ?></div>
 
-          <h2><?php the_field('heading'); ?></h2>
+          <h1><?php the_field('heading'); ?></h1>
 
           <?php the_field('intro_text'); ?>
         </div>
 
-        <div class="c-tag">Our Instructors</div>
+        <div class="c-tag">Our Leaders</div>
 
         <div class="l-instructors-list">
           <?php

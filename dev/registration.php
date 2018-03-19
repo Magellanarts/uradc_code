@@ -12,7 +12,7 @@
       <div class="l-main-content  u-lrg-font-size">
         <div class="c-tag">Program Registration</div>
 
-        <h2><?php the_title(); ?></h2>
+        <h1><?php the_title(); ?></h1>
 
         <div class="l-registration-container ">
           <div class="l-registration-container__intro u-body-copy u-std-font-size">

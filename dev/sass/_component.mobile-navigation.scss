@@ -5,15 +5,18 @@
   right: 0;
   height: 100%;
   z-index: 100;
-  width: 280px;
+  width: 320px;
   box-sizing: border-box;
-  padding: 48px 24px;
+  padding: 80px 32px;
   overflow: scroll;
   transition: .2s linear;
-  transform: translateX(280px);
+  transform: translateX(320px);
 
   .js-disabled-nav-link > a {
     cursor: default;
+    &:hover {
+      color: #fff;
+    }
   }
 
   li {
@@ -24,8 +27,14 @@
       display: block;
       margin-bottom:  6px;
       text-transform: uppercase;
-      font: 700 16px/20px $siteFont;
+      font: 700 16px/24px $roboto--slab;
       color: #fff;
+      transition: all .24s ease-in-out;
+
+      &:hover {
+        color: $orange;
+        transition: all .24s ease-in-out;
+      }
 
       &:last-child {
         margin-bottom: 0;
@@ -54,7 +63,7 @@
       }
 
       a {
-        font: 300 14px/20px $siteFont;
+        font: 300 16px/24px $siteFont;
         text-transform: none;
         margin-bottom: 6px;
       }
