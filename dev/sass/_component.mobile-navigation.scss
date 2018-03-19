@@ -5,12 +5,12 @@
   right: 0;
   height: 100%;
   z-index: 100;
-  width: 320px;
+  width: 280px;
   box-sizing: border-box;
   padding: 80px 32px;
   overflow: scroll;
   transition: .2s linear;
-  transform: translateX(320px);
+  transform: translateX(280px);
 
   .js-disabled-nav-link > a {
     cursor: default;
