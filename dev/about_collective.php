@@ -30,7 +30,7 @@
             setup_postdata($post);
 
             $headshot = get_field('image');
-             $headshot = str_replace('.jpg', '-150x150.jpg', $headshot);
+             $headshot = str_replace('.jpg', '-300x300.jpg', $headshot);
 
           ?>
           <div class="c-instructor-mini-card">

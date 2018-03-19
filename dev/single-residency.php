@@ -113,8 +113,8 @@ wp_reset_postdata();
             if( have_rows('image_gallery') ):
                 while ( have_rows('image_gallery') ) : the_row();
                 $imageSmall = get_sub_field('gallery_image');
-        $imageSmall = str_replace('.jpg', '-150x150.jpg', $imageSmall);
-        $imageSmall = str_replace('.png', '-150x150.png', $imageSmall);
+        $imageSmall = str_replace('.jpg', '-300x300.jpg', $imageSmall);
+        $imageSmall = str_replace('.png', '-300x300.png', $imageSmall);
           ?>
             <a href="<?php the_sub_field('gallery_image'); ?>">
               <img src="<?php echo $imageSmall; ?>">

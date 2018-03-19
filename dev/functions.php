@@ -10,6 +10,7 @@ function twentyfourteen_scripts() {
 
     wp_enqueue_style( 'gfonts', '//fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,400i,700' );
 
+     wp_enqueue_style( 'icon-font', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 
     if(is_page_template('registration.php') || is_single()):
       wp_enqueue_script('jquery', false, array(), false, false);
