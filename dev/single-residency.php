@@ -98,7 +98,11 @@ wp_reset_postdata();
             </div>
           </div>
 
-          <div class="c-author-card c-author-card--large u-hide-below-med u-hide-below-med--grid">
+          <div class="l-program-content__main u-body-copy u-hide@med" >
+            <?php the_field('description_content'); ?>
+          </div>
+
+          <div class="c-author-card c-author-card--large ">
             <div class="c-author-card__image" style="background-image: url(<?php echo $headshot; ?>);"></div>
             <div class="c-author-card__content">
               <p><strong><?php echo $name[0] . ' ' . $name[1]; ?></strong><br>
@@ -127,16 +131,13 @@ wp_reset_postdata();
         </div>
       </div>
 
-      <div class="l-program-content__main u-body-copy js-content-toggle__text" data-text="description">
+      <div class="l-program-content__main u-body-copy u-hide-below-med" >
         <?php the_field('description_content'); ?>
       </div>
 
-      <div class="c-content-toggle-btn c-content-toggle-btn--top-border js-content-toggle" data-text="description">
-        <span class="is-closed ">OPEN PROGRAM Description&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down"></i></span>
-        <span class="is-open">Close PROGRAM Description&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-up"></i></span>
-      </div>
 
-      <div class="c-author-card c-author-card--small u-hide@med">
+
+      <!--div class="c-author-card c-author-card--small u-hide@med">
         <div class="c-author-card__image" style="background-image: url(<?php echo $headshot; ?>);"></div>
         <div class="c-author-card__content">
           <p><strong><?php echo $name[0] . ' ' . $name[1]; ?></strong><br>
@@ -145,7 +146,7 @@ wp_reset_postdata();
 
           <a href="<?php echo $link; ?>">More about <?php echo $name[0]; ?></a>
         </div>
-      </div>
+      </div -->
     </div>
   </div>
 </section>

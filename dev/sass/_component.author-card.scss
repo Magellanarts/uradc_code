@@ -7,15 +7,6 @@
   &--small {
     padding-top: 60px;
   }
-
-
-  @media #{$medium} {
-    display: flex;
-
-    > div {
-      flex: 1;
-    }
-  }
 }
 
 .c-author-card__image {

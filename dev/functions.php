@@ -54,7 +54,7 @@ $args = array(
 'show_ui' => true,
 'capability_type' => 'page',
 'hierarchical' => true,
-'rewrite' => true,
+'rewrite'            => array( 'slug' => 'leader' ),
 'taxonomies' => array('post_tag', 'category'),
 'supports' => array('title', 'editor', 'thumbnail', 'page-attributes', 'custom-fields', 'menu-order')
 );
