@@ -13,7 +13,7 @@ $headshot = get_field('image');
 wp_reset_postdata();
 
 ?>
-<section class="c-hero c-hero--orange">
+<section class="c-hero c-hero--empty c-hero--orange">
   <div class="c-hero__slider js-hero-slider">
     <?php
             if( have_rows('image_gallery') ):

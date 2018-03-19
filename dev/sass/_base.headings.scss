@@ -19,12 +19,12 @@ h2,h1 {
   }
 }
 
-// h1 {
-//   font-size: 40px;
-//   @media #{$medium} {
-//     font-size: 64px;
-//   }
-// }
+h1 {
+  font-size: 40px;
+  @media #{$medium} {
+    font-size: 64px;
+  }
+}
 
 h3 {
   font: 700 32px/1.2 $roboto;

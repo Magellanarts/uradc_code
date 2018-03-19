@@ -12,21 +12,27 @@
 
 .c-program-details__gallery {
   @include border-radius(8px, 8px);
-  height: 320px;
+  height: 400px;
   width: 100%;
 
   img {
     @include border-radius(8px, 8px);
     display: block;
   }
+  @media #{$large} {
+    height: 320px;
+  }
 }
 
 .c-program-details__gallery__image {
-  height: 320px;
+  height: 400px;
   width: 100%;
   background-size: cover;
   background-position: center center;
   @include border-radius(8px, 8px);
+  @media #{$large} {
+    height: 320px;
+  }
 }
 
 .c-program-details__header {

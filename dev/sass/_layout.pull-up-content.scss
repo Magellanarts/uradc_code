@@ -14,11 +14,16 @@
     margin-bottom: -140px;
   }
 
+  &--further {
+    top: -280px;
+    margin-bottom: -160px;
+  }
+
   @media #{$large} {
     top: -448px;
 
     &--aside {
-      margin-bottom: -140px;
+      margin-bottom: -320px;
     }
   }
 }

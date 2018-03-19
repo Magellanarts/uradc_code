@@ -3,12 +3,12 @@
  */
  get_header();
  ?>
-<section class="c-hero c-hero--gray" style="background-image: url(<?php the_field('hero_image'); ?>);">
+<section class="c-hero c-hero--empty c-hero--gray" style="background-image: url(<?php the_field('hero_image'); ?>);">
 
 </section>
 <section class="u-bg--gray--light">
   <div class="l-content-container l-pull-up-content-container">
-    <div class="l-pull-up-content">
+    <div class="l-pull-up-content l-pull-up-content--further">
       <div class="l-main-content  u-lrg-font-size">
         <div class="c-tag">Program Registration</div>
 

@@ -1,5 +1,4 @@
 .c-hero {
-  min-height: 700px;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
@@ -8,11 +7,15 @@
   background-size: cover;
   overflow: hidden;
   background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   background-color: $orange;
   background-blend-mode: luminosity;
   @media #{$large} {
     padding-top: 248px;
+    display: block;
   }
   &:after {
     content: '';
@@ -24,10 +27,14 @@
     left: 0;
   }
 
+  &--empty {
+    min-height: 700px;
+  }
+
   &--orange {
     background-color: $orange;
     &:after {
-      background: rgba($orange, .64);
+      background: rgba($orange, .8);
     }
 
   }
@@ -35,7 +42,7 @@
   &--gray {
     background-color: $gray;
     &:after {
-      background: rgba($gray, .64);
+      background: rgba($gray, .4);
     }
   }
 
@@ -61,23 +68,32 @@
 .c-hero__offset-content {
   position: relative;
   z-index: 3;
-  padding-top: 22px;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 48px;
 
   color: $white;
   font: 24px/1.33 $siteFont;
 
   h1 {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     font: 700 40px/1.14 $roboto--slab;
 
-    @media #{$large} {
+    @media #{$medium} {
       font-size: 56px;
     }
+  }
+
+  @media #{$medium} {
+    margin-bottom: 80px;
   }
 
   @media #{$large} {
     padding-top: 44px;
     padding-left: 44%;
+    position: absolute;
+    margin-top: -32px;
+    margin-bottom: 0;
   }
 }
 
