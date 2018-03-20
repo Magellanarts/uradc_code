@@ -7,7 +7,8 @@ jQuery('.js-program-details-gallery').slick({
   slidesToShow: 1,
   autoplay: true,
   autoplaySpeed: 4000,
-  arrows: false
+  arrows: false,
+  pauseOnHover: false
 });
 
 
@@ -18,6 +19,7 @@ jQuery('.js-hero-slider').slick({
   autoplay: true,
   autoplaySpeed: 4000,
   arrows: false,
-  fade: true
+  fade: true,
+  pauseOnHover: false
 });
 
